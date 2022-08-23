@@ -1,0 +1,78 @@
+:root{
+    --dark-violet: #645394;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.container > div{
+    font-size: 20px;
+    background-color: var(--dark-violet);
+    height: 56px;
+    
+    text-align: center;
+    color: #C9C1E0;
+    padding-top: 12px;
+    
+    vertical-align: auto;
+}
+
+#logo-title{
+    padding-right: 20%;
+    padding-top: 8px;
+}
+
+#search-city{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 30px;
+    border: #645394;
+    
+}
+
+#search-city-btn{
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: #C9C1E0;
+    border: #645394;
+}
+
+.forecast-container{
+    height: 45vh;
+    background-color: #C9C1E0;
+    display: flex;
+}
+.today-day{
+    margin: 5vh 5vw 0vh 5vw;
+    height: 40vh;
+    background-color: var(--dark-violet);
+    width: 90vw;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #645394;
+}
+
+.day{
+    box-shadow: 0px 0px 10px #645394;
+    margin: 5vh 0vw 5vh 5vw;
+    height: 35vh;
+    background-color: var(--dark-violet);
+    width: 20vw;
+    border-radius: 25px;
+}
+
+.five-day{
+    margin-right:5vw;
+}
+
+
