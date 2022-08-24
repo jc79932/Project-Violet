@@ -8,25 +8,113 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="./assets/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/135d757917.js" crossorigin="anonymous"></script>
     <title>Project Violet</title>
 </head>
 <body>
     <header>
         <nav class="container">
-            <div style="flex-basis: 20%"><input type="text" id="search-city" name="search-city"><button id="search-city-btn">Go</button></div>
-            <div id="logo-title" style="flex-basis: 80%"><h1>Project Violet</h1></div>
+            <div style="flex-basis: 20%;"><input type="text" id="search-city" name="search-city"><button id="search-city-btn"><i class='fas fa-search'></i></button></div>
+            <div id="logo-title" style="flex-basis: 80%;"><h1>Project Violet</h1></div>
         </nav>
     </header>
+<!-- Today -->
+    <div class="forecast-container">
+        <div class="today-day">
+            <div class="city-style">
+                <h1 id="city">Brownsville</h1><h1> - Today</h1>
+                <h2 class="current-weather">90&deg</h2>
+                <div class="weather-icon">
+                    <div class="weather-precip"><i style='font-size:15px' class='fas'>&#xf73d;</i>: 90%</div>
+                </div>
+            </div>
+            <div class="container" style="flex-direction: column; align-items: flex-start;">
+                <div class="low-temp"><h2 class="inline m-30">Low:</h2><h2 class="content low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline m-30">High:</h2><h2 class="content high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline m-30">Wind:</h2><h2 class="content wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline m-30">Humidity:</h2><h2 class="content humidity">0</h2></div>
+                <div class="UV-style"><h2 class="inline m-30">UV:</h2><h2 class="content uv-index">0</h2></div>
+            </div>
+        </div>
+    </div>
+<!-- End Today -->
+
 
     <div class="forecast-container">
-        <div class="today-day"></div>
+<!-- Tomorrow -->
+        <div class="one-day day">
+            <div class = "min-days">
+                <h1 style="margin: 12px 0px;">Tomorrow</h1>
+            </div>
+            <div class="min-container" style="flex-direction: column; align-items: center;">
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
+                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="weather-icon-one"></div>
+            </div>
+        </div>
+<!-- End Tomorrow -->
+
+<!-- Day Two -->
+        <div class="two-day day">
+            <div class = "min-days">
+                <h1 style="margin: 12px 0px;">Tuesday</h1>
+            </div>
+            <div class="min-container" style="flex-direction: column; align-items: center;">
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
+                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="weather-icon-one"></div>
+            </div>
+        </div>
+<!-- End Day Two -->
+        <div class="three-day day">
+            <div class = "min-days">
+                <h1 style="margin: 12px 0px;">Wednesday</h1>
+            </div>
+            <div class="min-container" style="flex-direction: column; align-items: center;">
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
+                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="weather-icon-one"></div>
+            </div>
+        </div>
+        <div class="four-day day">
+            <div class = "min-days">
+                <h1 style="margin: 12px 0px;">Thursday</h1>
+            </div>
+            <div class="min-container" style="flex-direction: column; align-items: center;">
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
+                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="weather-icon-one"></div>
+            </div>
+        </div>
+        <div class="five-day day">
+            <div class = "min-days">
+                <h1 style="margin: 12px 0px;">Friday</h1>
+            </div>
+            <div class="min-container" style="flex-direction: column; align-items: center;">
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
+                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="weather-icon-one"></div>
+            </div>
+        </div>
     </div>
-    <div class="forecast-container">
-        <div class="one-day day"></div>
-        <div class="two-day day"></div>
-        <div class="three-day day"></div>
-        <div class="four-day day"></div>
-        <div class="five-day day"></div>
-    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/scripts.js"></script>
+    
 </body>
 </html>
