@@ -1,6 +1,7 @@
 :root{
-    --dark-violet: #645394;
-    --light-violet: #C9C1E0;
+    --dark-violet: #324AB2;
+    --light-violet: #E0E6FF;
+    --test-violet: #6F7EBF;
 }
 
 *{
@@ -8,7 +9,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
-    
+    font-weight: 500;
+}
+
+body{
+    background-color: var(--test-violet);
 }
 
 .container{
@@ -21,7 +26,7 @@
     height: 56px;
     
     text-align: center;
-    color: #C9C1E0;
+    color: var(--light-violet);
     padding-top: 12px;
     
     vertical-align: auto;
@@ -36,7 +41,7 @@
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     height: 30px;
-    border: #645394;
+    border: var(--test-violet);
     
 }
 
@@ -46,13 +51,13 @@
     border-bottom-right-radius: 20px;
     height: 30px;
     width: 30px;
-    background-color: #C9C1E0;
+    background-color: var(--test-violet);
     border: #645394;
 }
 
 .forecast-container{
     height: 45vh;
-    background-color: #C9C1E0;
+    background-color: var(--test-violet);
     display: flex;
 }
 .today-day{
@@ -91,7 +96,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30vh;
-    
+    font-weight:100;
+    text-shadow: 5px 5px 15px --test-violet;
 }
 .current-weather::before{
     display: block;
@@ -110,7 +116,7 @@
 .weather-icon{
     width: 150px;
     height: 150px;
-    background-color: aqua;
+    /* background-color: aqua; */
     float: right;
     margin-right: 30px;
     
@@ -118,7 +124,7 @@
 
 .weather-precip{
     text-align: center;
-    margin-top: 100%;
+    margin-top: 0%;
 }
 
 .inline{
@@ -156,7 +162,7 @@
     
 
 }
-.weather-icon-one{
+.min-icon-one{
     margin-top: 12px;
     width: 100px;
     height: 100px;
