@@ -48,11 +48,11 @@
                 <h1 style="margin: 12px 0px;">Tomorrow</h1>
             </div>
             <div class="min-container" style="flex-direction: column; align-items: center;">
-                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
-                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
-                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
-                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
-                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content" id="one-low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content one-high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content one-wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content one-humidity">0</h2></div>
+                <!-- <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content one-uv-index">0</h2></div> -->
                 <div class="min-weather-icon weather-icon-one"> <img src="./assets/weather-two.png" width="100px" height="100px">
                 </div>
             </div>
@@ -62,14 +62,14 @@
 <!-- Day Two -->
         <div class="two-day day">
             <div class = "min-days">
-                <h1 style="margin: 12px 0px;">Tuesday</h1>
+                <h1 class="day-two" style="margin: 12px 0px;">Tuesday</h1>
             </div>
             <div class="min-container" style="flex-direction: column; align-items: center;">
-                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
-                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
-                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
-                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
-                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content two-low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content two-high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content two-wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content two-humidity">0</h2></div>
+                <!-- <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content two-uv-index">0</h2></div> -->
                 <div class="min-weather-icon weather-icon-two"> <img src="./assets/file-not-found.png" width="100px" height="100px">
                 </div>
             </div>
@@ -77,48 +77,49 @@
 <!-- End Day Two -->
         <div class="three-day day">
             <div class = "min-days">
-                <h1 style="margin: 12px 0px;">Wednesday</h1>
+                <h1 class="day-three" style="margin: 12px 0px;">Wednesday</h1>
             </div>
             <div class="min-container" style="flex-direction: column; align-items: center;">
-                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
-                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
-                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
-                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
-                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content three-low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content three-high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content three-wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content three-humidity">0</h2></div>
+                <!-- <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content three-uv-index">0</h2></div> -->
                 <div class="min-weather-icon weather-icon-three"> <img src="./assets/file-not-found.png" width="100px" height="100px">
                 </div>
             </div>
         </div>
         <div class="four-day day">
             <div class = "min-days">
-                <h1 style="margin: 12px 0px;">Thursday</h1>
+                <h1 class="day-four" style="margin: 12px 0px;">Thursday</h1>
             </div>
             <div class="min-container" style="flex-direction: column; align-items: center;">
-                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
-                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
-                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
-                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
-                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content four-low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content four-high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content four-wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content four-humidity">0</h2></div>
+                <!-- <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content four-uv-index">0</h2></div> -->
                 <div class="min-weather-icon weather-icon-four"> <img src="./assets/file-not-found.png" width="100px" height="100px">
                 </div>
             </div>
         </div>
         <div class="five-day day">
             <div class = "min-days">
-                <h1 style="margin: 12px 0px;">Friday</h1>
+                <h1 class="day-five" style="margin: 12px 0px;">Friday</h1>
             </div>
             <div class="min-container" style="flex-direction: column; align-items: center;">
-                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content low" style="color: rgb(87, 176, 255);">80F</h2></div>
-                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content high" style="color: rgb(255, 101, 46);">100F</h2></div>
-                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content wind">0</h2></div>
-                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content humidity">0</h2></div>
-                <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content uv-index">0</h2></div>
+                <div class="low-temp"><h2 class="inline">Low:</h2><h2 class="min-content five-low" style="color: rgb(87, 176, 255);">80F</h2></div>
+                <div class="high-temp"><h2 class="inline">High:</h2><h2 class="min-content five-high" style="color: rgb(255, 101, 46);">100F</h2></div>
+                <div class="wind-style"><h2 class="inline">Wind:</h2><h2 class="min-content five-wind">0</h2></div>
+                <div class="humidity-style"><h2 class="inline">Humidity:</h2><h2 class="min-content five-humidity">0</h2></div>
+                <!-- <div class="UV-style"><h2 class="inline">UV:</h2><h2 class="min-content five-uv-index">0</h2></div> -->
                 <div class="min-weather-icon weather-icon-five"> <img src="./assets/file-not-found.png" width="100px" height="100px">
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/scripts.js"></script>
     
