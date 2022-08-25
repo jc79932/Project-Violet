@@ -1,7 +1,7 @@
 :root{
-    --dark-violet: #324AB2;
+    --dark-violet: #4A5480;
     --light-violet: #E0E6FF;
-    --test-violet: #6F7EBF;
+    --test-violet: #CCD1E8;
 }
 
 *{
@@ -46,7 +46,7 @@ body{
 }
 
 #search-city-btn{
-    
+    cursor: pointer;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 30px;
@@ -67,7 +67,7 @@ body{
     background-color: var(--dark-violet);
     width: 90vw;
     border-radius: 25px;
-    box-shadow: 0px 0px 10px #645394;
+    box-shadow: 0px 0px 5px var(--dark-violet);
     position: relative;
 }
 
@@ -81,7 +81,7 @@ body{
     color: gainsboro;
 }
 .day{
-    box-shadow: 0px 0px 10px #645394;
+    box-shadow: 0px 0px 5px var(--dark-violet);
     margin: 5vh 0vw 5vh 5vw;
     height: 35vh;
     background-color: var(--dark-violet);
@@ -97,7 +97,7 @@ body{
     transform: translate(-50%, -50%);
     font-size: 30vh;
     font-weight:100;
-    text-shadow: 5px 5px 15px --test-violet;
+    text-shadow: 1px 1px 200px var(--test-violet);
 }
 .current-weather::before{
     display: block;
