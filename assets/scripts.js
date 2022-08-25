@@ -77,7 +77,8 @@ let forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + defa
 let siteURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + defaultLat + "&lon=" + defaultLon + "&appid=d1c2fd318d4288ca5a66ea9133404e32"
 function site_URL(defaultLat, defaultLon){
     let siteURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + defaultLat + "&lon=" + defaultLon + "&appid=d1c2fd318d4288ca5a66ea9133404e32"
-    
+    let forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + defaultLat + "&lon=" + defaultLon + "&appid=d1c2fd318d4288ca5a66ea9133404e32"
+
     fetch("https://api.openweathermap.org/data/2.5/uvi?lat=" + defaultLat + "&lon=" + defaultLon + "&appid=d1c2fd318d4288ca5a66ea9133404e32")
     .then(function(response){ 
         if(response.ok){
@@ -236,5 +237,22 @@ fetch(siteURL)
   .then((response) => response.json())
   .then((data) => console.log(data));
 
-
   site_URL(defaultLat, defaultLon);
+
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      console.log("Location denied")
+    }
+  }
+    function showPosition(position) {
+    console.log( "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude)
+    let defaultLat = position.coords.latitude
+    let defaultLon = position.coords.longitude
+    site_URL(position.coords.latitude, position.coords.longitude);
+  }
+
+getLocation()
+
+ 
